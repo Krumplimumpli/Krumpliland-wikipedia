@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republik Krumpliland – Wikipedia</title>
+    <style>
+        /* Grundlegendes Wikipedia-Ähnliches Styling */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #202122;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        #mw-page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        #firstHeading {
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            font-size: 1.8em;
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 0.25em;
+            padding-bottom: 0.25em;
+            font-weight: normal;
+        }
+        .mw-body-content {
+            font-size: 0.875em;
+            line-height: 1.6;
+        }
+        .infobox {
+            float: right;
+            clear: right;
+            width: 300px;
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 10px;
+            margin: 0 0 1em 1em;
+            font-size: 0.9em;
+            box-sizing: border-box;
+        }
+        .infobox th {
+            text-align: left;
+            vertical-align: top;
+            padding: 2px 5px;
+        }
+        .infobox td {
+            vertical-align: top;
+            padding: 2px 5px;
+        }
+        .infobox caption {
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px;
+        }
+        .infobox img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 5px auto;
+        }
+        .infobox .flag-icon {
+            width: 150px;
+        }
+        h2 {
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            font-size: 1.5em;
+            border-bottom: 1px solid #a2a9b1;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            font-weight: normal;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            font-weight: normal;
+        }
+        p {
+            margin: 0.5em 0;
+        }
+        .toc {
+            display: inline-block;
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 10px 20px;
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 1em;
+            margin: 0;
+        }
+        .toc li {
+            margin: 0.2em 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #0645ad;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery li {
+            border: 1px solid #c8ccd1;
+            background: #f8f9fa;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .gallery img {
+            max-width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .gallery .gallerytext {
+            padding: 3px;
+        }
+        .plainlinks a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .plainlinks a:hover {
+            text-decoration: underline;
+        }
+        .mw-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #a2a9b1;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        .mw-heading h2, .mw-heading h3 {
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        /* Tabellen Styling */
+        table.wikitable {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            border-collapse: collapse;
+            color: #202122;
+            margin: 1em 0;
+            width: 100%;
+        }
+        table.wikitable > * > tr > th {
+            background-color: #eaecf0;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            text-align: left;
+        }
+        table.wikitable > * > tr > td {
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+        }
+
+        /* SVG Chart Styling */
+        .chart-container {
+            background-color: #f8f9fa;
+            border: 1px solid #c8ccd1;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .chart-container h4 {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+        .svg-chart {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            overflow: visible;
+        }
+        .svg-grid {
+            stroke: #eaecf0;
+            stroke-width: 1;
+        }
+        .svg-axis {
+            stroke: #a2a9b1;
+            stroke-width: 1.5;
+        }
+        .svg-line {
+            fill: none;
+            stroke-width: 3;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+        }
+        .svg-point {
+            stroke: #fff;
+            stroke-width: 2;
+        }
+        .svg-text {
+            font-family: sans-serif;
+            font-size: 10px;
+            fill: #54595d;
+        }
+        .svg-label {
+            font-family: sans-serif;
+            font-size: 11px;
+            fill: #202122;
+            font-weight: bold;
+        }
+        .svg-legend {
+            font-family: sans-serif;
+            font-size: 12px;
+            fill: #202122;
+        }
+    </style>
+</head>
+<body>
+<div id="mw-page-container">
+    <h1 id="firstHeading">Republik Krumpliland</h1>
+    <div class="mw-body-content">
+
+        <!-- Infobox -->
+        <table class="infobox">
+            <caption>Republik Krumpliland</caption>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <img src="super.jpg" alt="Flagge der Republik Krumpliland" class="flag-icon">
+                    <br><small>Flagge</small>
+                </td>
+            </tr>
+            <tr>
+                <th>Amtssprache</th>
+                <td>Deutsch, Krumplisch</td>
+            </tr>
+            <tr>
+                <th>Hauptstadt</th>
+                <td>Krumplihausen</td>
+            </tr>
+            <tr>
+                <th>Staats- und Regierungsform</th>
+                <td>Dualistische Republik</td>
+            </tr>
+            <tr>
+                <th>Standort</th>
+                <td>Im Herzen der Bürger (und in Gedanken auf North Sentinel Island)</td>
+            </tr>
+            <tr>
+                <th>Einwohnerzahl</th>
+                <td>Schätzungsweise 2</td>
+            </tr>
+            <tr>
+                <th>Währung</th>
+                <td>keine</td>
+            </tr>
+            <tr>
+                <th>Gründung</th>
+                <td>9. September 2022</td>
+            </tr>
+        </table>
+
+        <p><b>Krumpliland</b> (offiziell <b>Republik Krumpliland</b>) ist ein Staat, der am 9. September 2022 gegründet wurde. Die Republik durchlief seitdem mehrere politische und flaggentechnische Phasen. Die Republik ist bekannt für ihre wechselhafte Geschichte, die von der Pömpelkrise, dem Verrat durch Máté Vida und einer langen Phase der Stille geprägt ist.</p>
+
+        <!-- Inhaltsverzeichnis -->
+        <div class="toc">
+            <div style="font-weight: bold; text-align: center;">Inhaltsverzeichnis</div>
+            <ul>
+                <li><a href="#Geschichte">1 Geschichte</a>
+                    <ul>
+                        <li><a href="#Flaggengeschichte">1.1 Flaggengeschichte</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Wahlen">2 Wahlen</a></li>
+                <li><a href="#Verbreitung">3 Verbreitung krumpliländischer Produkte</a></li>
+                <li><a href="#Projekte">4 Projekte</a></li>
+                <li><a href="#Weblinks">5 Weblinks</a></li>
+            </ul>
+        </div>
+
+        <!-- Geschichte -->
+        <div class="mw-heading">
+            <h2 id="Geschichte">Geschichte</h2>
+        </div>
+        <p>Die Republik Krumpliland wurde am 9. September 2022 gegründet. In den ersten zwei Tagen nach der Gründung wurde eine provisorische Flagge verwendet. Seitdem hat das Land mehrere Flaggenwechsel und politische Krisen erlebt.</p>
+
+        <div class="mw-heading">
+            <h3 id="Flaggengeschichte">Flaggengeschichte</h3>
+        </div>
+        <p>Die Flaggen der Republik Krumpliland spiegeln die wechselvolle Geschichte des Landes wider:</p>
+        <ul class="gallery">
+            <li>
+                <img src="demoflagge.png" alt="Provisorische Flagge">
+                <div class="gallerytext">Provisorische Flagge<br>(07.–09.09.2022)</div>
+            </li>
+            <li>
+                <img src="old.png" alt="Flagge September 2022 – Januar 2023">
+                <div class="gallerytext">Flagge<br>(Sept. 2022 – Jan. 2023)</div>
+            </li>
+            <li>
+                <img src="con.jpg" alt="Flagge Januar – März 2023 (Pömpelkrise)">
+                <div class="gallerytext">Flagge (Jan. – März 2023)<br>Ergebnis der Pömpelkrise</div>
+            </li>
+            <li>
+                <img src="nas.jpg" alt="Flagge März – Mai 2023 (Reaktion auf Verrat von Máté Vida)">
+                <div class="gallerytext">Flagge (März – Mai 2023)<br>Reaktion auf Verrat von Máté Vida</div>
+            </li>
+            <li>
+                <img src="super.jpg" alt="Flagge Mai 2023 – April 2025 (Phase der Stille)">
+                <div class="gallerytext">Flagge (Mai 2023 – April 2025)<br>Phase der Stille</div>
+            </li>
+            <li>
+                <img src="new.jpg" alt="Flagge April – August 2025 (Übergangsregierung)">
+                <div class="gallerytext">Flagge (April – Aug. 2025)<br>Übergangsregierung und Neustrukturierung</div>
+            </li>
+            <li>
+                <img src="black.jpg" alt="Flagge August 2025 – März 2026 (ohne Grund)">
+                <div class="gallerytext">Flagge (Aug. 2025 – März 2026)<br>ohne Grund</div>
+            </li>
+            <li>
+                <img src="super.jpg" alt="Flagge seit März 2026 (wieder super.jpg)">
+                <div class="gallerytext">Flagge (seit März 2026)<br>wieder super.jpg</div>
+            </li>
+        </ul>
+
+        <!-- Wahlen -->
+        <div class="mw-heading">
+            <h2 id="Wahlen">Wahlen</h2>
+        </div>
+        <p>In der Geschichte der Republik Krumpliland fanden bisher drei Wahlen statt. Die Ergebnisse werden in den folgenden Tabellen und Diagrammen dargestellt.</p>
+        
+        <!-- Linien-Diagramm für Wahlen -->
+        <div class="chart-container">
+            <h4>Entwicklung der Parteienstimmen (Dez. 2022 – Feb. 2023)</h4>
+            <svg class="svg-chart" viewBox="0 0 800 350" preserveAspectRatio="xMidYMid meet">
+                <!-- Grid Lines -->
+                <line x1="80" y1="50" x2="750" y2="50" class="svg-grid" />
+                <line x1="80" y1="110" x2="750" y2="110" class="svg-grid" />
+                <line x1="80" y1="170" x2="750" y2="170" class="svg-grid" />
+                <line x1="80" y1="230" x2="750" y2="230" class="svg-grid" />
+                <line x1="80" y1="290" x2="750" y2="290" class="svg-grid" />
+                
+                <!-- Y-Axis Labels -->
+                <text x="70" y="54" text-anchor="end" class="svg-text">60%</text>
+                <text x="70" y="114" text-anchor="end" class="svg-text">45%</text>
+                <text x="70" y="174" text-anchor="end" class="svg-text">30%</text>
+                <text x="70" y="234" text-anchor="end" class="svg-text">15%</text>
+                <text x="70" y="294" text-anchor="end" class="svg-text">0%</text>
+                
+                <!-- Axes -->
+                <line x1="80" y1="290" x2="750" y2="290" class="svg-axis" />
+                <line x1="80" y1="30" x2="80" y2="290" class="svg-axis" />
+
+                <!-- X-Axis Labels -->
+                <text x="150" y="320" text-anchor="middle" class="svg-text">Dez 2022</text>
+                <text x="415" y="320" text-anchor="middle" class="svg-text">Jan 2023</text>
+                <text x="680" y="320" text-anchor="middle" class="svg-text">Feb 2023</text>
+
+                <!-- DPK (Dualistische Partei) - Blau -->
+                <polyline points="150,134 415,185 680,57" class="svg-line" stroke="#4b77d6" />
+                <circle cx="150" cy="134" r="4" fill="#4b77d6" class="svg-point" />
+                <circle cx="415" cy="185" r="4" fill="#4b77d6" class="svg-point" />
+                <circle cx="680" cy="57" r="4" fill="#4b77d6" class="svg-point" />
+                <text x="150" y="124" text-anchor="middle" class="svg-label">39%</text>
+                <text x="415" y="175" text-anchor="middle" class="svg-label">26,3%</text>
+                <text x="680" y="47" text-anchor="middle" class="svg-label">58,3%</text>
+
+                <!-- Pömpelpartei - Rot -->
+                <polyline points="150,168 415,69" class="svg-line" stroke="#fd7865" />
+                <circle cx="150" cy="168" r="4" fill="#fd7865" class="svg-point" />
+                <circle cx="415" cy="69" r="4" fill="#fd7865" class="svg-point" />
+                <text x="150" y="158" text-anchor="middle" class="svg-label">30,5%</text>
+                <text x="415" y="59" text-anchor="middle" class="svg-label">55,2%</text>
+
+                <!-- Willfit-Partei - Grün -->
+                <polyline points="415,206 680,190" class="svg-line" stroke="#269f4b" />
+                <circle cx="415" cy="206" r="4" fill="#269f4b" class="svg-point" />
+                <circle cx="680" cy="190" r="4" fill="#269f4b" class="svg-point" />
+                <text x="415" y="196" text-anchor="middle" class="svg-label">21%</text>
+                <text x="680" y="180" text-anchor="middle" class="svg-label">25%</text>
+
+                <!-- KPK - Lila -->
+                <polyline points="150,221" class="svg-line" stroke="#9182c2" />
+                <circle cx="150" cy="221" r="4" fill="#9182c2" class="svg-point" />
+                <text x="150" y="211" text-anchor="middle" class="svg-label">17,2%</text>
+
+                <!-- BPK - Orange -->
+                <polyline points="150,236" class="svg-line" stroke="#eeb533" />
+                <circle cx="150" cy="236" r="4" fill="#eeb533" class="svg-point" />
+                <text x="150" y="226" text-anchor="middle" class="svg-label">13,3%</text>
+
+                <!-- Lachssiche-Partei - Türkis -->
+                <polyline points="680,257" class="svg-line" stroke="#80cdb3" />
+                <circle cx="680" cy="257" r="4" fill="#80cdb3" class="svg-point" />
+                <text x="680" y="247" text-anchor="middle" class="svg-label">8,33%</text>
+                
+                <!-- Demokratischer Rad - Grau -->
+                <polyline points="415,279 680,257" class="svg-line" stroke="#a2a9b1" />
+                <circle cx="415" cy="279" r="4" fill="#a2a9b1" class="svg-point" />
+                <circle cx="680" cy="257" r="4" fill="#a2a9b1" class="svg-point" />
+                <text x="415" y="269" text-anchor="middle" class="svg-label">2,6%</text>
+                <text x="680" y="247" text-anchor="middle" class="svg-label" style="fill:#a2a9b1;">8,33%</text>
+
+                <!-- Legende -->
+                <rect x="80" y="330" width="15" height="15" fill="#4b77d6" />
+                <text x="100" y="342" class="svg-legend">DPK</text>
+                <rect x="160" y="330" width="15" height="15" fill="#fd7865" />
+                <text x="180" y="342" class="svg-legend">Pömpelpartei</text>
+                <rect x="290" y="330" width="15" height="15" fill="#269f4b" />
+                <text x="310" y="342" class="svg-legend">Willfit</text>
+                <rect x="390" y="330" width="15" height="15" fill="#9182c2" />
+                <text x="410" y="342" class="svg-legend">KPK</text>
+                <rect x="470" y="330" width="15" height="15" fill="#eeb533" />
+                <text x="490" y="342" class="svg-legend">BPK</text>
+                <rect x="550" y="330" width="15" height="15" fill="#80cdb3" />
+                <text x="570" y="342" class="svg-legend">Lachssiche</text>
+                <rect x="670" y="330" width="15" height="15" fill="#a2a9b1" />
+                <text x="690" y="342" class="svg-legend">Dem. Rad</text>
+            </svg>
+        </div>
+
+        <h3>Wahlen Dezember 2022</h3>
+        <p><img src="2.png" alt="Wahlergebnis Dezember 2022" style="max-width: 400px; display: block; margin: 10px 0;"></p>
+        <table class="wikitable">
+            <tr>
+                <th>Partei</th>
+                <th>Stimmenanteil</th>
+            </tr>
+            <tr>
+                <td>DPK (Dualistische Partei Krumpliland)</td>
+                <td>39 %</td>
+            </tr>
+            <tr>
+                <td>Pömpelpartei</td>
+                <td>30,5 %</td>
+            </tr>
+            <tr>
+                <td>KPK (Kommunistische Partei Krumplilands)</td>
+                <td>17,2 %</td>
+            </tr>
+            <tr>
+                <td>BPK (Biersäufer-Partei)</td>
+                <td>13,3 %</td>
+            </tr>
+        </table>
+
+        <h3>Wahlen Januar 2023</h3>
+        <p><i>(Pömpelparteikrise)</i></p>
+        <table class="wikitable">
+            <tr>
+                <th>Partei</th>
+                <th>Stimmenanteil</th>
+            </tr>
+            <tr>
+                <td>Pömpelpartei</td>
+                <td>55,2 %</td>
+            </tr>
+            <tr>
+                <td>DPK (Dualistische Partei Krumpliland)</td>
+                <td>26,3 %</td>
+            </tr>
+            <tr>
+                <td>Willfit-Partei</td>
+                <td>21 %</td>
+            </tr>
+            <tr>
+                <td>Demokratischer Rad</td>
+                <td>2,6 %</td>
+            </tr>
+        </table>
+
+        <h3>Wahlen Februar 2023</h3>
+        <p><img src="1.jpg" alt="Wahlergebnis Februar 2023" style="max-width: 400px; display: block; margin: 10px 0;"></p>
+        <table class="wikitable">
+            <tr>
+                <th>Partei</th>
+                <th>Stimmenanteil</th>
+            </tr>
+            <tr>
+                <td>DPK (Dualistische Partei Krumpliland)</td>
+                <td>58,31 %</td>
+            </tr>
+            <tr>
+                <td>Willfit-Partei</td>
+                <td>25 %</td>
+            </tr>
+            <tr>
+                <td>Lachssiche-Partei</td>
+                <td>8,33 %</td>
+            </tr>
+            <tr>
+                <td>Demokratischer Rad</td>
+                <td>8,33 %</td>
+            </tr>
+        </table>
+
+        <!-- Verbreitung -->
+        <div class="mw-heading">
+            <h2 id="Verbreitung">Verbreitung krumpliländischer Produkte</h2>
+        </div>
+        <p>Die folgende Grafik zeigt den geschätzten Verlauf der Anzahl von Personen, die jemals krumpliländische Ergebnisse in Form von Produkten, Videos und Slogans gesehen haben. Wichtige historische Ereignisse sind als Punkte markiert.</p>
+        
+        <!-- Linien-Diagramm für Reichweite -->
+        <div class="chart-container">
+            <h4>Reichweiten-Entwicklung (2022–2026)</h4>
+            <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                <!-- Grid Lines -->
+                <line x1="80" y1="50" x2="750" y2="50" class="svg-grid" />
+                <line x1="80" y1="120" x2="750" y2="120" class="svg-grid" />
+                <line x1="80" y1="190" x2="750" y2="190" class="svg-grid" />
+                <line x1="80" y1="260" x2="750" y2="260" class="svg-grid" />
+                <line x1="80" y1="330" x2="750" y2="330" class="svg-grid" />
+                
+                <!-- Y-Axis Labels -->
+                <text x="70" y="54" text-anchor="end" class="svg-text">150k</text>
+                <text x="70" y="124" text-anchor="end" class="svg-text">112.5k</text>
+                <text x="70" y="194" text-anchor="end" class="svg-text">75k</text>
+                <text x="70" y="264" text-anchor="end" class="svg-text">37.5k</text>
+                <text x="70" y="334" text-anchor="end" class="svg-text">0</text>
+                
+                <!-- Axes -->
+                <line x1="80" y1="330" x2="750" y2="330" class="svg-axis" />
+                <line x1="80" y1="30" x2="80" y2="330" class="svg-axis" />
+
+                <!-- Data Points and Line -->
+                <polyline points="120,330 230,326 330,330 400,330 460,329 490,328 520,260 550,220 580,110 620,87 680,80 740,76" class="svg-line" stroke="#4b77d6" />
+
+                <!-- Points and Labels -->
+                <!-- 09/22 Gründung -->
+                <circle cx="120" cy="330" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="120" y="345" text-anchor="middle" class="svg-text">09/22</text>
+                <text x="120" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Gründung</text>
+                <text x="120" y="320" text-anchor="middle" class="svg-label">1</text>
+
+                <!-- 01/23 Pömpelkrise -->
+                <circle cx="230" cy="326" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="230" y="345" text-anchor="middle" class="svg-text">01/23</text>
+                <text x="230" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Pömpelkrise</text>
+                <text x="230" y="316" text-anchor="middle" class="svg-label">21</text>
+
+                <!-- 03/23 Verrat -->
+                <circle cx="330" cy="330" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="330" y="345" text-anchor="middle" class="svg-text">03/23</text>
+                <text x="330" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Verrat</text>
+                <text x="330" y="320" text-anchor="middle" class="svg-label">2</text>
+
+                <!-- 12/24 Tiefpunkt -->
+                <circle cx="400" cy="330" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="400" y="345" text-anchor="middle" class="svg-text">12/24</text>
+                <text x="400" y="320" text-anchor="middle" class="svg-label">1</text>
+
+                <!-- 04/25 Übergang -->
+                <circle cx="460" cy="329" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="460" y="345" text-anchor="middle" class="svg-text">04/25</text>
+                <text x="460" y="319" text-anchor="middle" class="svg-label">2</text>
+
+                <!-- 06/25 Project Island -->
+                <circle cx="490" cy="328" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="490" y="345" text-anchor="middle" class="svg-text">06/25</text>
+                <text x="490" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Project Island</text>
+                <text x="490" y="318" text-anchor="middle" class="svg-label">3</text>
+
+                <!-- Rapid Growth Weeks -->
+                <circle cx="520" cy="260" r="5" fill="#80cdb3" class="svg-point" />
+                <text x="520" y="250" text-anchor="middle" class="svg-label" style="fill:#269f4b;">+35k</text>
+
+                <circle cx="550" cy="220" r="5" fill="#80cdb3" class="svg-point" />
+                <text x="550" y="210" text-anchor="middle" class="svg-label" style="fill:#269f4b;">+30k</text>
+
+                <circle cx="580" cy="110" r="5" fill="#80cdb3" class="svg-point" />
+                <text x="580" y="100" text-anchor="middle" class="svg-label" style="fill:#269f4b;">+60k</text>
+
+                <!-- 10/25 Ballonstart -->
+                <circle cx="620" cy="87" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="620" y="345" text-anchor="middle" class="svg-text">10/25</text>
+                <text x="620" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Ballonstart</text>
+                <text x="620" y="77" text-anchor="middle" class="svg-label">~130k</text>
+
+                <!-- 08/26 Modding -->
+                <circle cx="740" cy="76" r="5" fill="#4b77d6" class="svg-point" />
+                <text x="740" y="345" text-anchor="middle" class="svg-text">08/26</text>
+                <text x="740" y="360" text-anchor="middle" class="svg-label" style="fill:#bf3c2c;">Modding</text>
+                <text x="740" y="66" text-anchor="middle" class="svg-label">~135k</text>
+            </svg>
+            <div style="font-size: 0.8em; text-align: center; margin-top: 10px; color: #54595d;">
+                Die Y-Achse ist zur besseren Darstellung der frühen Jahre nicht linear skaliert. Die schnellen Zuwächse im Juni 2025 sind durch die steile Kurve dargestellt.
+            </div>
+        </div>
+
+        <!-- Projekte -->
+        <div class="mw-heading">
+            <h2 id="Projekte">Projekte</h2>
+        </div>
+        <p>Die Republik Krumpliland ist bekannt für ihre vielfältigen und teils unkonventionellen Projekte. Die folgenden Bilder geben einen Einblick:</p>
+        
+        <ul class="gallery" style="justify-content: flex-start;">
+            <li>
+                <img src="windrad.png" alt="Windrad" style="max-height: 200px;">
+                <div class="gallerytext">
+                    <b>Windrad</b><br>
+                    Ein allein durch Krumpliland entstandenes Windrad, welches in der Lage ist, keinen Strom zu produzieren.
+                </div>
+            </li>
+            <li>
+                <img src="anhänger.png" alt="Anhänger" style="max-height: 200px;">
+                <div class="gallerytext">
+                    <b>Anhänger</b><br>
+                    Bilder der Flagge der Übergangsregierung (aufgenommen Ende 2025).
+                </div>
+            </li>
+            <li>
+                <img src="lage.png" alt="Lage der Insel" style="max-height: 200px;">
+                <div class="gallerytext">
+                    <b>Lage</b><br>
+                    Ein Bild der Insel.
+                </div>
+            </li>
+        </ul>
+
+        <!-- Weblinks -->
+        <div class="mw-heading">
+            <h2 id="Weblinks">Weblinks</h2>
+        </div>
+        <ul>
+            <li><a href="#" class="plainlinks">Offizielle Website der Republik Krumpliland</a></li>
+            <li><a href="#" class="plainlinks">Krumpliland auf GitHub</a></li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
